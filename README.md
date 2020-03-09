@@ -13,7 +13,6 @@
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-  - [API Reference](#api-reference)
   - [License](#license)
   - [Contact](#contact)
 ## About The Project
@@ -24,7 +23,7 @@ Pretius recrutation task
 
 ### Prerequisites
 
-* [java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+* [java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 * [Maven 3.6.3](https://maven.apache.org/download.cgi)
 
 ### Installation
@@ -40,21 +39,14 @@ $ mvn clean package
 ```
 3. Launch application with the following command
 ```sh
-$ mvn spring-boot:run
+$ mvn clean install
+```
+4. (Optional) in case of maven is not installed launch script
+```sh
+$ ./mvnw clean install
 ```
 
-## API Reference
 
-### Admin panel
-
-  - `admin/*` administration panel for managing users
-
-### invoice related
-
-- `/invoices/`<br> display/add/delete/modify invoices stored in database
-- `invoices/{id}`<br> get/delete/modify invoice based on given id
-- `invoices/byNumber?=<number>`<br> display/delete/modify invoice based on its number
-  
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license)
