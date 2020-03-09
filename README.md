@@ -28,20 +28,25 @@ Pretius recrutation task
 
 ### Installation
 
-1. Clone the repo
+Clone the repo
 ```sh
 $ git clone https://github.com/mateusz58/PretiusTask.git
 $ cd PretiusTask
 ```
-2. Set up initial build of project
+Set up initial build of project
 ```sh
 $ mvn clean package
 ```
-3. Launch application with the following command
+Change variable values 
+
+```
+pathHOME. pathDEV, pathTEST. pathHELP in FileHelper class file to corresponding path where you would like store the directories and paths
+```
+Launch application with the following command
 ```sh
 $ mvn clean install
 ```
-4. (Optional) in case of maven is not installed launch script
+(Optional) in case of maven is not installed launch script
 ```sh
 $ ./mvnw clean install
 ```
